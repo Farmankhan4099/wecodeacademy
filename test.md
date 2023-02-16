@@ -1,6 +1,6 @@
 // ans-10
 
-#test-javascript
+# test-javascript
 
 let string = "we code";
 if (string.length > 10) {
