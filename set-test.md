@@ -60,6 +60,10 @@ console.log(otherSet);
 
 ## 7. Find the intersection of mySet and otherSet.
 
+```
+
+```
+
 ## 8. Find the union of mySet and otherSet.
 
 ```
