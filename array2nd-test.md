@@ -126,6 +126,11 @@ console.log(string(["banana", "mango", "apple", "cheery", "papaya"]));
 ## 9 Write a function that takes an array of numbers and returns a new array where each element is the square of the original element
 
 ```
+let arr7 = [2, 3, 4, 6, 7, 8];
+console.log(arr7.map(square));
+function square(num) {
+  return num ** 2;
+}
 
 ```
 
@@ -214,6 +219,18 @@ function fruits(num, num1) {
 ## 18 Write a function that takes an array of strings and returns a new array with only the strings that contain the letter "a".
 
 ```
+function nameInfo(myInfo) {
+  let open = [];
+
+  for (let a = 0; a < myInfo.length; a++) {
+    if (myInfo[a].includes("a")) {
+      open += " " + myInfo[a];
+    }
+  }
+  return open;
+}
+
+console.log(nameInfo(["farman", "khan", "here", "back", "is"]));
 
 ```
 
@@ -233,5 +250,15 @@ function ascendingNumber(num, num1) {
 ## 20 Write a function that takes an array of strings and flattens each string into an array of characters, then flattens the result into a single array.
 
 ```
+function flattens(str) {
+  strEmpty1 = "";
+  for (let a = 0; a < str.length; a++) {
+    strEmpty1 += str[a];
+  }
+  return strEmpty1.split("");
+}
+
+let arr20 = ["hello", "world"];
+console.log(flattens(arr20))
 
 ```
