@@ -199,7 +199,7 @@ function plusNumber(pre, cur) {
 let str2 = ["apple", "banana", "cherry", "date"];
 console.log(str2.sort(fruits));
 function fruits(num, num1) {
-  return num - num1;
+  return num.length - num1.length;
 }
 
 ```
