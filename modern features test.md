@@ -16,24 +16,23 @@ console.log(str("weCode academy"));
 
 ```
 
-function removeArr([...arr]) {
-  arr.shift();
-  return arr;
+function test(str) {
+  [, ...a] = str;
+  return a;
 }
 
-console.log(removeArr([1, 2, 3, 4]));
+console.log(test([1, 2, 3, 4, 5, 6]));
 
 ```
 
 ## q3 Create a function that takes in an unknown number of arrays and uses the rest operator to flatten them into a single array
 
 ```
-function unknown([...arr]) {
-  console.log(arr);
+function test(...arr) {
+  return [].concat(...arr);
 }
-let arr = [1, 2, 3, 4, 5];
-let arr1 = [6, 7, 8, 9, 10];
-unknown([...arr, ...arr1]);
+
+console.log(test([1, 2], [3, 4], [5, 6], [7, 8]));
 
 ```
 
@@ -41,20 +40,12 @@ unknown([...arr, ...arr1]);
 
 ```
 
-function objFn({ ...obj }) {
-  if (obj?.x) {
-    return obj.x;
-  } else {
-    return null;
-  }
+
+function test(obj) {
+  return obj.x ?? null;
 }
 
-let obj = {
-  name: "farman khan",
-  x: "properties",
-};
-
-console.log(objFn(obj));
+console.log(test({ x: 0 }));
 
 ```
 
@@ -62,20 +53,14 @@ console.log(objFn(obj));
 
 ```
 
-function sumOdd(arr) {
-  let newArr = [];
-  let newArr1 = [];
-  for (let a = 0; a < arr.length; a++) {
-    if (arr[a] % 2 === 0) {
-      newArr.push(arr[a]);
-    } else {
-      newArr1.push(arr[a]);
-    }
-  }
-  return [...newArr1, ...newArr];
+function test(arr) {
+  let odd = arr.filter((num) => num % 2 === 1);
+
+  let even = arr.filter((num) => num % 2 === 0);
+  return [...odd, ...even];
 }
 
-console.log(sumOdd([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(test([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 ```
 
@@ -106,6 +91,13 @@ let mobileFind = Number(prompt("what is your mobile number"));
 ## 8 Using enhanced object literal function, create a function sum which takes an array as parameter and return sum of all the numbers in the array.
 
 ```
+let obj = {
+  sum(arr) {
+    return arr.reduce((total, value) => total + value);
+  },
+};
+
+console.log(obj.sum([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 ```
 
@@ -113,53 +105,66 @@ let mobileFind = Number(prompt("what is your mobile number"));
 
 ```
 
-let num = 90;
-if (num > 80) {
-console.log(num && 100);
-} else {
-console.log(num && 200);
-}
+let a = 100;
 
+let b = (a > 80 && 100) || 200;
+console.log(b);
 ```
 
 ## 10 Create an array of 10 numbers. Now create a new array of 0 and 1 using Array destructring based on if number is odd then 1 else 0
 
 ```
 
-function findNumber([...arr]) {
-newPusharr = [];
-for (let a = 0; a < arr.length; a++) {
-if (arr[a] % 2 === 0) {
-newPusharr.push(0);
-} else {
-newPusharr.push(1);
-}
-}
-console.log(newPusharr);
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let aj = arr.map((num) => {
+  return num % 2 === 0 ? 0 : 1;
+});
+
+console.log(aj);
+
+
+// 2nd
+
+let a = arr.map(test);
+console.log(a);
+
+function test(num) {
+  if (num % 2 === 0) {
+    return 0;
+  } else {
+    return 1;
+  }
 }
 
-let arres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-findNumber(arres);
 
 ```
 
 ## 11 Given an array of price, use map function to return a new array where each price is converted to new price including tax, which is the price with a 10% tax added.
 
 ```
+let arr = [10, 20, 30, 40, 60];
 
+let tax = arr.map((num) => {
+  return num * 1.1;
+});
+
+console.log(tax);
 ```
 
 ## 12 Given an array of strings, use reduce to return the total number of characters in all the strings.
 
 ```
+let str = "weCode Academy in jaipur";
 
-let arrStr = ["we", "code", "academy", "in", "jaipur"];
-let add = arrStr.reduce(totalNumber, 0);
-console.log(add);
+let spl = str.split(" ");
 
-function totalNumber(total, value) {
-return total + value.length;
-}
+let ans = spl.reduce((total, value) => {
+  return total + value.length;
+}, 0);
+
+console.log(ans);
 
 ```
 
@@ -187,26 +192,12 @@ return totals + values.length;
 
 ```
 
-let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12];
-let filterNumber = arr2.filter(fillNumber);
-console.log(filterNumber);
+let arr = [1, 2, 3, 4, 5, 6, 10, 7, 8, 9, 9];
 
-function fillNumber(num) {
-return num % 2 === 1;
-}
-
-let mapNumber = filterNumber.map(mapNumberfind);
- console.log(mapNumber);
-
-function mapNumberfind(num) {
-return num \* 3;
-}
-
-console.log(mapNumber.reduce(reduNumber, 0));
-
-function reduNumber(total, num1) {
-return total + num1;
-}
+let fil = arr.filter((num) => num % 2 === 1);
+let multi = fil.map((num) => num * 3);
+let sum = multi.reduce((total, value) => total + value);
+console.log(sum);
 
 ```
 
