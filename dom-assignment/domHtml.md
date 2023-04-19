@@ -121,27 +121,6 @@
     </div>
 
 
-    <!-- <div class="container">
-    	<input type="text" class="input" id="input">
-    	<button class="btn" onclick="clearInput()">C</button>
-    	<button class="btn" onclick="appendToInput('%')">%</button>
-    	<button class="btn" onclick="appendToInput('/')">/</button>
-    	<button class="btn" onclick="appendToInput('*')">*</button>
-    	<button class="btn" onclick="appendToInput('7')">7</button>
-    	<button class="btn" onclick="appendToInput('8')">8</button>
-    	<button class="btn" onclick="appendToInput('9')">9</button>
-    	<button class="btn" onclick="appendToInput('-')">-</button>
-    	<button class="btn" onclick="appendToInput('4')">4</button>
-    	<button class="btn" onclick="appendToInput('5')">5</button>
-    	<button class="btn" onclick="appendToInput('6')">6</button>
-    	<button class="btn" onclick="appendToInput('+')">+</button>
-    	<button class="btn" onclick="appendToInput('1')">1</button>
-    	<button class="btn" onclick="appendToInput('2')">2</button>
-    	<button class="btn" onclick="appendToInput('3')">3</button>
-    	<button class="btn" onclick="calculate()">=</button>
-    	<button class="btn" onclick="appendToInput('0')">0</button>
-    	<button class="btn" onclick="appendToInput('.')">.</button>
-    </div> -->
 
     <script src="script.js"></script>
 
