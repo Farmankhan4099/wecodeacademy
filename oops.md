@@ -1,3 +1,4 @@
+```
 let account = function (
 name,
 aadhar,
@@ -64,3 +65,5 @@ let withDrawMoney = sbi.withdraw(2000);
 console.log(`totalBalance ${withDrawMoney}`);
 
 sbi.changePin();
+
+```
