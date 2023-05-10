@@ -9,7 +9,7 @@
 
 ```
 
-## this keyword ka use btao. This keyword ke different uses hai unhe explain kro with example
+## 2 this keyword ka use btao. This keyword ke different uses hai unhe explain kro with example
 
 ```
 
@@ -50,7 +50,7 @@ example-: let json{
 ## 4 In memories ke bare me btao
 
 ```
-       heap-   heap memory me jo object hota h unka data heap memory me save hota h!
+       heap-  jo bhi object hote h unka data heap memory me save hota h!
 
        stack-  stack memory me jab bhi ko functions call hote h to wo stack memory me ak ke bad ak save hote jate h aur jab
                functions excute hote h to jo function sabse last me save hua tha wo sabse pahle nikalta h
