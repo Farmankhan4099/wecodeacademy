@@ -1,3 +1,4 @@
+```
 .main {
 background-color: #f6f1f1;
 width: 70%;
@@ -52,3 +53,5 @@ border: 2px solid #000;
 padding: 0px 30px;
 border-radius: 20px;
 }
+
+```

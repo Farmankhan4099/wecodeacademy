@@ -1,3 +1,5 @@
+```
+
 function countrySearch() {
 let countryInput = document.getElementById("countryDetail").value;
 const httpRequest = new XMLHttpRequest();
@@ -88,3 +90,5 @@ console.log(capital[0].capital[0]);
 .catch(() => {
 console.log("hello javascript");
 });
+
+```
