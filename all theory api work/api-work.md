@@ -1,3 +1,56 @@
+## Try catch finally
+
+```
+
+  try catch ka matlab h ki agar hamare code me error aa gya ho ya esa lagta ho ki is code
+   me error aa sakta h to us error ko handle karne ke liye try catch ka use karte h and finnaly ka use error aane ya nhi aane per bhi hota h
+
+   Example:-
+         try{
+         let x=10
+         console.log(x.ToLaowerCase())
+
+         } catch(error){
+            console.log(error)
+         } finally{
+            console.log("finally Error)
+         }
+
+
+        try{
+            throw new Error(20)
+        } catch(value){
+             console.log(value.message)
+        }
+
+
+```
+
+## How the web works
+
+```
+ Client:-
+          Client ka matlab hota hai wo hissa jise hum user ke browser mein use karte hain.
+           Jab kabhi koi user server se webpage request karta hai
+           toh server usko HTML, CSS aur JavaScript files bhejta
+            hai. Fir client un files ko use karke webpage ko render karta hai.
+
+  server:-
+           javascript me server ek computer hota h jo desre computer ko data bhejta h
+           server ki help se ham api ko chalana, application bnana etc. work kar sakte h
+
+  request:-
+            javascript me ham request ke liye xmlhttprequest ya fetch ka use kar sakte h
+            inki help se ham server ko request bhej sekte h aur unse data le sakte h
+
+
+  response:-
+              javascript me ham jo fetch ya xmlhttprequest ke help se ham jo data bhejte h
+              aur unse jo data milta h usko ham response bolte h
+
+
+```
+
 ## what is ajax
 
 ```
@@ -194,55 +247,5 @@ fetch1
   .catch(() => {
     console.log("weCode");
   });
-
-```
-
-## Try catch finally
-
-```
-
-  try catch ka matlab h ki agar hamare code me error aa gya ho ya esa lagta ho ki is code
-   me error aa sakta h to us error ko  handle karne ke liye try catch ka use karte h
-
-   Example:-
-         try{
-         let x=10
-         console.log(x.ToLaowerCase())
-
-         } catch(error){
-            console.log(error)
-         } finally{
-            console.log("finally Error)
-         }
-
-
-        try{
-            throw new Error(20)
-        } catch(value){
-             console.log(value.message)
-        }
-
-
-```
-
-## How the web works
-
-```
- Client:-
-          Client ka matlab hota hai wo hissa jise hum user ke browser mein use karte hain. Jab kabhi koi user server se webpage request karta hai toh server usko HTML, CSS aur JavaScript files bhejta hai. Fir client un files ko use karke webpage ko render karta hai.
-
-  server:-
-           javascript me server ek computer hota h jo desre computer ko data bhejta h
-           server ki help se ham api ko chalana, application bnana etc. work kar sakte h
-
-  request:-
-            javascript me ham request ke liye xmlhttprequest ya fetch ka use kar sakte h
-            inki help se ham server ko request bhej sekte h aur unse data le sakte h
-
-
-  response:-
-              javascript me ham jo fetch ya xmlhttprequest ke help se ham jo data bhejte h
-              aur unse jo data milta h usko ham response bolte h
-
 
 ```
