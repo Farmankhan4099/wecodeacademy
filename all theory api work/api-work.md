@@ -4,7 +4,7 @@
 Ajax= Asynchronous javascript and xml
 
 ajax ki help se dynamically webpage ko update kiya ja sakta h aur  pag bar bar refresh bhi nhi karna padhta
-padta h  iska use javascript html css etc. ke sath kiya ja sakta h
+ iska use javascript html css etc. ke sath kiya ja sakta h
 
 ```
 
@@ -33,7 +33,7 @@ padta h  iska use javascript html css etc. ke sath kiya ja sakta h
 ```
 Api= Application Programming Interface
 
-Api se ham  hum apne code ko dusre software ya websites se connect kar sakte hain.
+Api se ham apne code ko dusre software ya websites se connect kar sakte hain.
 agar hame kisi country ka data nikalna h to ham api ke help se nikal sakte
 JavaScript me, hum fetch() function ka use kar API se data fetch kar sakte hain.
 
